@@ -1,0 +1,186 @@
+// Variaveis
+$verde: #00ff08;
+$branco : #ffffff;
+
+// Padrões
+@mixin btn-contato {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: $verde;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+@mixin btn-contato-hover {
+    box-shadow: 0px 0px 8px $verde;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+@mixin titulo-sections {
+    color: $branco;
+    font-size: 38px;
+    text-align: center;
+}
+
+// Geral
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+// Cabeçalho
+header {
+    padding: 40px 4%;
+
+    .interface {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    a {
+        color: #a2a2a2;
+        text-decoration: none;
+        display: inline-block;
+        transition: .2s;
+    }
+
+    a:hover {
+        color: $branco;
+        transform: scale(1.05);
+    }
+
+    nav {
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline-block;
+            padding: 0 40px;
+        }
+    }
+
+    .btn-contato {
+        button {
+            @include btn-contato()
+        }
+
+        button:hover {
+            @include btn-contato-hover()
+        }
+    }
+}
+
+// Topo do Site
+.topo-site {
+    padding: 40px 4%;
+
+    .flex {
+        align-items: center;
+        justify-content: center;
+        gap: 90px;
+    }
+
+    .txt-topo-site {
+        h1 {
+            font-size: 38px;
+            color: $branco;
+            line-height: 40px;
+
+            span {
+                color: $verde;
+                font-size: 50px;
+            }
+        }
+
+        p {
+            color: $branco;
+            margin: 40px 0px;
+        }
+
+        button {
+            @include btn-contato()
+        }
+
+        button:hover {
+            @include btn-contato-hover()
+        }
+    }
+
+    .img-topo-site {
+        img {
+            position: relative;
+            animation: flutuar 2s ease-in-out infinite alternate;
+        }
+    }
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px
+    }
+}
+
+// Especialidades
+.especialidades {
+    h2 {
+        @include titulo-sections();
+
+        span {
+            color: $verde;
+        }
+    }
+
+    .flex {
+        gap: 60px;
+    }
+
+    .especialidades-box {
+        padding: 40px;
+        color: $branco;
+        margin-top: 45px;
+        border-radius: 20px;
+        transition: .2s;
+
+        i {
+            font-size: 70px;
+            color: $verde;
+        }
+
+        h3 {
+            font-size: 28px;
+            margin: 15px 0;
+        }
+    }
+
+    .especialidades-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px #ffffff79;
+    }
+
+
+}
