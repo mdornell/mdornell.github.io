@@ -19,6 +19,21 @@ body {
   display: flex;
 }
 
+button:hover {
+  box-shadow: 0px 0px 8px #00ff08;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+h2.titulo {
+  color: #ffffff;
+  font-size: 38px;
+  text-align: center;
+}
+h2.titulo span {
+  color: #00ff08;
+}
+
 header {
   padding: 40px 4%;
 }
@@ -53,11 +68,6 @@ header .btn-contato button {
   border-radius: 30px;
   cursor: pointer;
 }
-header .btn-contato button:hover {
-  box-shadow: 0px 0px 8px #00ff08;
-  transform: scale(1.05);
-  transition: 0.2s;
-}
 
 .topo-site {
   padding: 40px 4%;
@@ -89,11 +99,6 @@ header .btn-contato button:hover {
   border-radius: 30px;
   cursor: pointer;
 }
-.topo-site .txt-topo-site button:hover {
-  box-shadow: 0px 0px 8px #00ff08;
-  transform: scale(1.05);
-  transition: 0.2s;
-}
 .topo-site .img-topo-site img {
   position: relative;
   animation: flutuar 2s ease-in-out infinite alternate;
@@ -106,14 +111,6 @@ header .btn-contato button:hover {
   100% {
     top: 30px;
   }
-}
-.especialidades h2 {
-  color: #ffffff;
-  font-size: 38px;
-  text-align: center;
-}
-.especialidades h2 span {
-  color: #00ff08;
 }
 .especialidades .flex {
   gap: 60px;
@@ -136,4 +133,82 @@ header .btn-contato button:hover {
 .especialidades .especialidades-box:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.4745098039);
+}
+
+.sobre {
+  padding: 80px 4%;
+}
+.sobre .flex {
+  align-items: center;
+  gap: 60px;
+}
+.sobre .txt-sobre {
+  color: #ffffff;
+}
+.sobre .txt-sobre h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+.sobre .txt-sobre h2 span {
+  display: block;
+}
+.sobre .txt-sobre p {
+  margin: 30px 0;
+  text-align: justify;
+}
+.sobre .txt-sobre .btn-social button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  background-color: #00ff08;
+  font-size: 28px;
+  cursor: pointer;
+  margin: 5px 5px;
+  transition: 0.2s;
+}
+
+.portifolio {
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.0901960784);
+}
+.portifolio .flex {
+  justify-content: space-around;
+  margin-top: 60px;
+}
+.portifolio .img-port {
+  width: 360px;
+  height: 460px;
+  background-color: #00ff08;
+  background-image: url(../imgs/projetoConversor.png);
+  background-size: cover;
+  background-position: 100% 0%;
+  transition: 8s;
+  cursor: pointer;
+  border-radius: 40px;
+  position: relative;
+}
+.portifolio .img-port .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6823529412);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  opacity: 0;
+  transition: 0.5s;
+}
+.portifolio .img-port:hover {
+  background-position: 100% 100%;
+}
+.portifolio .img-port:hover .overlay {
+  opacity: 1;
 }/*# sourceMappingURL=inicialPg.css.map */
