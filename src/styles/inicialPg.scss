@@ -1,5 +1,6 @@
 // Variaveis
-$verde: #00ff08;
+$azul: #179EE2;
+$preto: #000;
 $branco : #ffffff;
 
 // Padrões
@@ -7,14 +8,16 @@ $branco : #ffffff;
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: $verde;
+    background-color: $azul
+;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
 }
 
 @mixin btn-hover {
-    box-shadow: 0px 0px 8px $verde;
+    box-shadow: 0px 0px 8px $azul
+;
     transform: scale(1.05);
     transition: .2s;
 }
@@ -25,7 +28,8 @@ $branco : #ffffff;
     text-align: center;
 
     span {
-        color: $verde;
+        color: $azul
+    ;
     }
 }
 
@@ -34,7 +38,8 @@ $branco : #ffffff;
     height: 60px;
     border: none;
     border-radius: 30px;
-    background-color: $verde;
+    background-color: $azul
+;
     font-size: 28px;
     cursor: pointer;
     margin: 5px 5px;
@@ -47,6 +52,7 @@ $branco : #ffffff;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -133,7 +139,8 @@ header {
             line-height: 40px;
 
             span {
-                color: $verde;
+                color: $azul
+            ;
                 font-size: 50px;
             }
         }
@@ -183,7 +190,8 @@ header {
 
         i {
             font-size: 70px;
-            color: $verde;
+            color: $azul
+        ;
         }
 
         h3 {
@@ -209,6 +217,9 @@ header {
         gap: 60px;
     }
 
+    .img-sobre img{
+        border-radius: 25px;
+    }
     .txt-sobre {
         color: $branco;
 
@@ -243,7 +254,8 @@ header {
     .img-port {
         width: 360px;
         height: 460px;
-        background-color: $verde;
+        background-color: $azul
+    ;
         background-image: url(../imgs/projetoConversor.png);
         background-size: cover;
         background-position: 100% 0%;
@@ -318,7 +330,8 @@ header {
 
             input {
                 width: 120px;
-                background-color: $verde;
+                background-color: $azul
+            ;
                 color: $branco;
                 font-weight: 600;
                 cursor: pointer;
@@ -343,7 +356,8 @@ footer {
     }
 
     .borda{
-        border-bottom:2px solid $verde ;
+        border-bottom:2px solid $azul
+     ;
     }
 
     .line-footer {
@@ -352,7 +366,8 @@ footer {
 
         p {
             i {
-                color: $verde;
+                color: $azul
+            ;
             }
 
             a{
