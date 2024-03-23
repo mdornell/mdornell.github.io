@@ -84,7 +84,7 @@ header .btn-contato button {
 
 .topo-site {
   padding: 40px 4%;
-  box-shadow: 0 0 40px 0 10px rgba(255, 255, 255, 0.0901960784);
+  box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.0901960784);
 }
 .topo-site .flex {
   align-items: center;
