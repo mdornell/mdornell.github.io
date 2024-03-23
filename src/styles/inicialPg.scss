@@ -1,9 +1,8 @@
 // Variaveis
 $azul: #179EE2;
-$preto: #000;
+$preto: #131313;
+$cinza: #151515bd;
 $branco : #ffffff;
-
-
 
 // Padrões
 @mixin btn-model-1 {
@@ -54,7 +53,7 @@ $branco : #ffffff;
 }
 
 body {
-    background: black;
+    background: $preto;
     height: 100vh;
 }
 
@@ -81,7 +80,7 @@ h2.titulo {
 
 // Cabeçalho
 header {
-    padding: 40px 4%;
+    padding: 10px 4%;
 
     .interface {
         display: flex;
@@ -123,6 +122,7 @@ header {
 // Topo do Site
 .topo-site {
     padding: 40px 4%;
+    box-shadow: 0 0 40px 0 10px #ffffff17;
 
     .flex {
         align-items: center;
@@ -173,6 +173,8 @@ header {
 
 // Especialidades
 .especialidades {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff17;
 
     .flex {
         gap: 60px;
@@ -207,6 +209,7 @@ header {
 // Sobre
 .sobre {
     padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff17;
 
     .flex {
         align-items: center;
@@ -240,12 +243,12 @@ header {
 
 // Portifolio
 .portifolio {
-    padding: 80px 4%;
+    padding: 60px 4%;
     box-shadow: 0 0 40px 10px #ffffff17;
 
     .flex {
         justify-content: space-around;
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
     .img-port {
@@ -266,7 +269,7 @@ header {
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: #000000ae;
+            background-color: $cinza;
             border-radius: 40px;
             display: flex;
             align-items: center;

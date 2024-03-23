@@ -7,7 +7,7 @@
 }
 
 body {
-  background: black;
+  background: #131313;
   height: 100vh;
 }
 
@@ -48,7 +48,7 @@ h2.titulo span {
 }
 
 header {
-  padding: 40px 4%;
+  padding: 10px 4%;
 }
 header .interface {
   display: flex;
@@ -84,6 +84,7 @@ header .btn-contato button {
 
 .topo-site {
   padding: 40px 4%;
+  box-shadow: 0 0 40px 0 10px rgba(255, 255, 255, 0.0901960784);
 }
 .topo-site .flex {
   align-items: center;
@@ -125,6 +126,10 @@ header .btn-contato button {
     top: 30px;
   }
 }
+.especialidades {
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.0901960784);
+}
 .especialidades .flex {
   gap: 60px;
 }
@@ -150,6 +155,7 @@ header .btn-contato button {
 
 .sobre {
   padding: 80px 4%;
+  box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.0901960784);
 }
 .sobre .flex {
   align-items: center;
@@ -175,12 +181,12 @@ header .btn-contato button {
 }
 
 .portifolio {
-  padding: 80px 4%;
+  padding: 60px 4%;
   box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.0901960784);
 }
 .portifolio .flex {
   justify-content: space-around;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .portifolio .img-port {
   width: 360px;
@@ -200,7 +206,7 @@ header .btn-contato button {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6823529412);
+  background-color: rgba(21, 21, 21, 0.7411764706);
   border-radius: 40px;
   display: flex;
   align-items: center;
