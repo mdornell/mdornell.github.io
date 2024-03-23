@@ -3,21 +3,21 @@ $azul: #179EE2;
 $preto: #000;
 $branco : #ffffff;
 
+
+
 // Padrões
 @mixin btn-model-1 {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: $azul
-;
+    background-color: $azul;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
 }
 
 @mixin btn-hover {
-    box-shadow: 0px 0px 8px $azul
-;
+    box-shadow: 0px 0px 8px $azul;
     transform: scale(1.05);
     transition: .2s;
 }
@@ -28,8 +28,7 @@ $branco : #ffffff;
     text-align: center;
 
     span {
-        color: $azul
-    ;
+        color: $azul ;
     }
 }
 
@@ -38,8 +37,7 @@ $branco : #ffffff;
     height: 60px;
     border: none;
     border-radius: 30px;
-    background-color: $azul
-;
+    background-color: $azul;
     font-size: 28px;
     cursor: pointer;
     margin: 5px 5px;
@@ -139,8 +137,7 @@ header {
             line-height: 40px;
 
             span {
-                color: $azul
-            ;
+                color: $azul ;
                 font-size: 50px;
             }
         }
@@ -170,7 +167,7 @@ header {
     }
 
     100% {
-        top: 30px
+        top: 30px;
     }
 }
 
@@ -190,8 +187,7 @@ header {
 
         i {
             font-size: 70px;
-            color: $azul
-        ;
+            color: $azul ;
         }
 
         h3 {
@@ -217,9 +213,10 @@ header {
         gap: 60px;
     }
 
-    .img-sobre img{
+    .img-sobre img {
         border-radius: 25px;
     }
+
     .txt-sobre {
         color: $branco;
 
@@ -254,8 +251,7 @@ header {
     .img-port {
         width: 360px;
         height: 460px;
-        background-color: $azul
-    ;
+        background-color: $azul ;
         background-image: url(../imgs/projetoConversor.png);
         background-size: cover;
         background-position: 100% 0%;
@@ -330,8 +326,7 @@ header {
 
             input {
                 width: 120px;
-                background-color: $azul
-            ;
+                background-color: $azul ;
                 color: $branco;
                 font-weight: 600;
                 cursor: pointer;
@@ -355,22 +350,20 @@ footer {
         justify-content: space-between;
     }
 
-    .borda{
-        border-bottom:2px solid $azul
-     ;
+    .borda {
+        border-bottom: 2px solid $azul ;
     }
 
     .line-footer {
         padding: 20px 0;
-        
+
 
         p {
             i {
-                color: $azul
-            ;
+                color: $azul ;
             }
 
-            a{
+            a {
                 color: $branco;
                 text-decoration: none;
                 cursor: pointer;
