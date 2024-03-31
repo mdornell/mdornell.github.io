@@ -94,20 +94,23 @@ header {
         display: inline-block;
         transition: .2s;
     }
-
-    a:hover {
-        color: $branco;
-        transform: scale(1.05);
-    }
-
-    nav {
+    nav{
         ul {
             list-style-type: none;
         }
+    }
 
-        li {
-            display: inline-block;
-            padding: 0 40px;
+    nav.menu-desktop {
+        ul{
+            li {
+                display: inline-block;
+                padding: 0 40px;
+            }
+        }
+
+        a:hover {
+            color: $branco;
+            transform: scale(1.05);
         }
     }
 
@@ -119,6 +122,64 @@ header {
     }
 }
 
+// Menu Mobile
+.menu-mobile{
+    background-color: $preto;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 0%;
+    overlay: hidden;
+
+    .btn-fechar{
+        padding: 15px 8%;
+        i{
+            color: $azul;
+            font-size: 30px;
+        }
+    }
+
+    nav{
+        ul{
+            text-align: right;
+
+            li{
+                a{
+                    color: $branco;
+                    font-size: 20px;
+                    font-weight: 300;
+                    padding: 20px 8%;
+                    display: block;
+                }
+
+                a:hover{
+                    background-color: $azul;
+                }
+            }
+        }
+    }
+
+}
+
+.btn-abrir-menu{
+    i{
+        color: $azul;
+        font-size: 40px;
+    }
+}
+
+.overlay-menu{
+    background-color: $cinza;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
 // Topo do Site
 .topo-site {
     padding: 40px 4%;
@@ -371,6 +432,101 @@ footer {
                 text-decoration: none;
                 cursor: pointer;
             }
+        }
+    }
+}
+
+// Media Query
+@media screen and (max-width: 1000px) {
+
+    // Geral
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.titulo{
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    // Cabeçalho
+    .menu-desktop,.btn-contato {
+        display: none;
+    }
+
+    // Top do Site
+    .topo-site {
+        padding: 20px 8%;
+
+        .flex {
+            flex-direction: column-reverse;
+            gap: 40px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .img-topo-site {
+            img {
+                width: 100%;
+            }
+        }
+
+
+    }
+
+    // Especialidades
+    .especialidades {
+        padding: 40px 8%;
+    }
+
+    // Sobre
+    .sobre{
+        padding: 80px 8%;
+
+        .txt-sobre {
+            h2 {
+                font-size: 34px;
+                line-height: 30px;
+                text-align: center;
+            }
+        }
+
+        .btn-social{
+            text-align: center;
+        }
+
+        .img-sobre{
+            img{
+                width: 100%;
+            }
+        }
+
+    }
+
+    .portifolio{
+        padding: 80px 8%;
+
+        .flex{
+            gap:50px;
+        }
+
+        .img-port{
+            width: 100%;
+            max-width: 360px;
+            margin: 0 auto;
+        }
+    }
+
+    // Rodape
+    footer{
+        .flex{
+            flex-direction: column;
+        }
+
+        .line-footer{
+            text-align: center;
         }
     }
 }
