@@ -1,0 +1,51 @@
+// @import "../inicialPg.scss";
+// // Formulario
+// .formulario {
+//     padding: 80px 4%;
+
+//     form {
+//         max-width: 500px;
+//         margin: 0 auto;
+//         display: flex;
+//         justify-content: center;
+//         flex-direction: column;
+//         gap: 10px;
+//         margin-top: 40px;
+
+//         input,
+//         textarea {
+//             width: 100%;
+//             background-color: #2a2a2a;
+//             border: 0;
+//             border-radius: 15px;
+//             outline: 0;
+//             padding: 20px 15px;
+//             color: $branco;
+//             font-size: 18px;
+//         }
+
+//         textarea {
+//             resize: none;
+//             max-height: 200px;
+//         }
+
+//         .btn-enviar {
+//             margin-top: 20px;
+//             text-align: center;
+
+//             input {
+//                 width: 120px;
+//                 background-color: $azul ;
+//                 color: $branco;
+//                 font-weight: 600;
+//                 cursor: pointer;
+//                 transition: .2s;
+//             }
+
+//             input:hover {
+//                 @include btn-hover()
+//             }
+//         }
+
+//     }
+// }

@@ -1,0 +1,103 @@
+// Media Query
+@media screen and (max-width: 1000px) {
+
+    // Geral
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.titulo {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    // Cabeçalho
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    .btn-abrir-menu {
+        display: inline;
+    }
+
+    // Top do Site
+    .topo-site {
+        padding: 20px 8%;
+
+        .flex {
+            flex-direction: column-reverse;
+            gap: 40px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .img-topo-site {
+            img {
+                width: 100%;
+            }
+        }
+
+
+    }
+
+    // Especialidades
+    .especialidades {
+        padding: 40px 8%;
+    }
+
+    // Sobre
+    .sobre {
+        padding: 80px 8%;
+
+        .txt-sobre {
+            h2 {
+                font-size: 34px;
+                line-height: 30px;
+                text-align: center;
+            }
+        }
+
+        .btn-social {
+            text-align: center;
+        }
+
+        .img-sobre {
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+
+    .portifolio {
+        padding: 80px 8%;
+
+        .flex {
+            gap: 50px;
+        }
+
+        .img-port {
+            width: 100%;
+            max-width: 360px;
+            margin: 0 auto;
+        }
+    }
+
+    // Rodape
+    footer {
+        .flex {
+            flex-direction: column;
+        }
+
+        .line-footer {
+            text-align: center;
+        }
+    }
+
+    .curios{
+        padding: 40px 8px;
+    }
+}

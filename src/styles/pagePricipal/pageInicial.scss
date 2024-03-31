@@ -1,0 +1,46 @@
+@import "SASS/mixins";
+@import "SASS/cabecalho";
+@import "SASS/topoSite";
+@import "SASS/especialidades";
+@import "SASS/sobre";
+@import "SASS/portifolio";
+@import "SASS/formulario";
+@import "SASS/rodape";
+@import "SASS/responsividade";
+@import "SASS/variaveis";
+@import "SASS/curiosidades";
+
+// Geral
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $preto;
+    height: 100vh;
+}
+
+.interface {
+    max-width: $tam-interface;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+button:hover {
+    @include btn-hover()
+}
+
+h2.titulo {
+    @include titulo-sections();
+}
+
+.btn-social button {
+    @include btn-redes-sociais();
+}

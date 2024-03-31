@@ -1,0 +1,52 @@
+
+// Topo do Site
+.topo-site {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff17;
+
+    .flex {
+        align-items: center;
+        justify-content: center;
+        gap: 90px;
+    }
+
+    .txt-topo-site {
+        h1 {
+            font-size: 38px;
+            color: $branco;
+            line-height: 40px;
+
+            span {
+                color: $azul ;
+                font-size: 50px;
+            }
+        }
+
+        p {
+            color: $branco;
+            margin: 40px 0px;
+        }
+
+        button {
+            @include btn-model-1()
+        }
+
+    }
+
+    .img-topo-site {
+        img {
+            position: relative;
+            animation: flutuar 2s ease-in-out infinite alternate;
+        }
+    }
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}

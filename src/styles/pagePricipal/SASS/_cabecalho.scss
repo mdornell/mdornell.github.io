@@ -1,0 +1,118 @@
+@import "variaveis";
+
+// Cabeçalho
+header {
+    padding: 10px 4%;
+
+    .interface {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    a {
+        color: #a2a2a2;
+        text-decoration: none;
+        display: inline-block;
+        transition: .2s;
+    }
+
+    nav {
+        ul {
+            list-style-type: none;
+        }
+    }
+
+    nav.menu-desktop {
+        ul {
+            li {
+                display: inline-block;
+                padding: 0 40px;
+            }
+        }
+
+        a:hover {
+            color: $branco;
+            transform: scale(1.05);
+        }
+    }
+
+    .btn-contato {
+        button {
+            @include btn-model-1();
+        }
+
+    }
+
+
+}
+
+// Menu Mobile
+.menu-mobile {
+    background-color: $preto;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 0%;
+    overlay: hidden;
+
+    .btn-fechar {
+        padding: 15px 8%;
+
+        i {
+            color: $azul;
+            font-size: 30px;
+        }
+    }
+
+    nav {
+        ul {
+            text-align: right;
+
+            li {
+                a {
+                    color: $branco;
+                    font-size: 20px;
+                    font-weight: 300;
+                    padding: 20px 8%;
+                    display: block;
+                }
+
+                a:hover {
+                    background-color: $azul;
+                }
+            }
+        }
+    }
+
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu~.overlay-menu {
+    display: block;
+}
+
+.btn-abrir-menu {
+    display: none;
+
+    i {
+        color: $azul;
+        font-size: 40px;
+    }
+}
+
+.overlay-menu {
+    background-color: $cinza;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}

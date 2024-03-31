@@ -1,0 +1,31 @@
+
+// Footer
+footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #2a2a2a;
+
+    .flex {
+        justify-content: space-between;
+    }
+
+    .borda {
+        border-bottom: 2px solid $azul ;
+    }
+
+    .line-footer {
+        padding: 20px 0;
+
+
+        p {
+            i {
+                color: $azul ;
+            }
+
+            a {
+                color: $branco;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

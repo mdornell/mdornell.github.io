@@ -1,0 +1,63 @@
+@import "variaveis";
+
+.curiosidades {
+    padding: 80px 4%;
+}
+
+// Paremetros Grid
+.curios {
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: 40px;
+    grid-auto-flow: column;
+    grid-template-areas:
+        " desbravador "
+        " violao "
+        " desenhista ";
+    max-width: 600px;
+    margin: 0 auto;
+
+    justify-content: center;
+
+    .desbravador {
+        grid-area: desbravador;
+    }
+
+    .violao {
+        grid-area: violao;
+    }
+
+    .desenhista {
+        grid-area: desenhista;
+    }
+}
+
+// Paremetros Grid+
+.curios {
+    .curiosidade-box {
+        padding: 40px;
+        color: $branco;
+        margin-top: 45px;
+        border-radius: 20px;
+        transition: .2s;
+
+        i {
+            font-size: 70px;
+            color: $azul ;
+        }
+
+        h3 {
+            font-size: 28px;
+            margin: 15px 0;
+        }
+
+        span {
+            color: $azul;
+        }
+    }
+
+    .curiosidade-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px #ffffff79;
+    }
+}

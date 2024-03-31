@@ -1,0 +1,51 @@
+@import "../pagePricipal/SASS/variaveis";
+
+.container-grid {
+    background-color: $preto ;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
+    grid-auto-columns: 600px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "unidades unidades"
+        "media-query media-query"
+        "animacao animacao"
+        "transformacao transformacao"
+        "sass sass"
+        "flex-box flex-box"
+        "grid grid";
+
+    .unidades ~ div{
+        box-shadow: 0 0 40px 10px #cdcdcd74;
+    }
+
+    .unidades {
+        grid-area: unidades;
+    }
+
+    .media-query {
+        grid-area: media-query;
+    }
+
+    .animacao {
+        grid-area: animacao;
+    }
+
+    .transformacao {
+        grid-area: transformacao;
+    }
+
+    .sass {
+        grid-area: sass;
+    }
+
+    .flex-box {
+        grid-area: flex-box;
+    }
+
+    .grid {
+        grid-area: grid;
+    }
+}
