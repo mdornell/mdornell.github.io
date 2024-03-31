@@ -163,6 +163,14 @@ header {
 
 }
 
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu {
+    display: block;
+}
+
 .btn-abrir-menu{
     i{
         color: $azul;
@@ -180,6 +188,8 @@ header {
     z-index: 8888;
     display: none;
 }
+
+
 // Topo do Site
 .topo-site {
     padding: 40px 4%;
@@ -310,6 +320,7 @@ header {
     .flex {
         justify-content: space-around;
         margin-top: 40px;
+        gap: 30px;
     }
 
     .img-port {

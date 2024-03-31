@@ -113,6 +113,14 @@ header .btn-contato button {
   background-color: #179EE2;
 }
 
+.menu-mobile.abrir-menu {
+  width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu {
+  display: block;
+}
+
 .btn-abrir-menu i {
   color: #179EE2;
   font-size: 40px;
@@ -234,6 +242,7 @@ header .btn-contato button {
 .portifolio .flex {
   justify-content: space-around;
   margin-top: 40px;
+  gap: 30px;
 }
 .portifolio .img-port {
   width: 360px;
