@@ -94,14 +94,15 @@ header {
         display: inline-block;
         transition: .2s;
     }
-    nav{
+
+    nav {
         ul {
             list-style-type: none;
         }
     }
 
     nav.menu-desktop {
-        ul{
+        ul {
             li {
                 display: inline-block;
                 padding: 0 40px;
@@ -123,7 +124,7 @@ header {
 }
 
 // Menu Mobile
-.menu-mobile{
+.menu-mobile {
     background-color: $preto;
     height: 100vh;
     position: fixed;
@@ -133,20 +134,21 @@ header {
     width: 0%;
     overlay: hidden;
 
-    .btn-fechar{
+    .btn-fechar {
         padding: 15px 8%;
-        i{
+
+        i {
             color: $azul;
             font-size: 30px;
         }
     }
 
-    nav{
-        ul{
+    nav {
+        ul {
             text-align: right;
 
-            li{
-                a{
+            li {
+                a {
                     color: $branco;
                     font-size: 20px;
                     font-weight: 300;
@@ -154,7 +156,7 @@ header {
                     display: block;
                 }
 
-                a:hover{
+                a:hover {
                     background-color: $azul;
                 }
             }
@@ -163,23 +165,24 @@ header {
 
 }
 
-.menu-mobile.abrir-menu{
+.menu-mobile.abrir-menu {
     width: 70%;
 }
 
-.menu-mobile.abrir-menu ~ .overlay-menu {
+.menu-mobile.abrir-menu~.overlay-menu {
     display: block;
 }
 
-.btn-abrir-menu{
+.btn-abrir-menu {
     display: none;
-    i{
+
+    i {
         color: $azul;
         font-size: 40px;
     }
 }
 
-.overlay-menu{
+.overlay-menu {
     background-color: $cinza;
     width: 100%;
     height: 100%;
@@ -456,17 +459,18 @@ footer {
         flex-direction: column;
     }
 
-    h2.titulo{
+    h2.titulo {
         font-size: 28px;
         line-height: 40px;
     }
 
     // Cabeçalho
-    .menu-desktop,.btn-contato {
+    .menu-desktop,
+    .btn-contato {
         display: none;
     }
 
-    .btn-abrir-menu{
+    .btn-abrir-menu {
         display: inline;
     }
 
@@ -498,7 +502,7 @@ footer {
     }
 
     // Sobre
-    .sobre{
+    .sobre {
         padding: 80px 8%;
 
         .txt-sobre {
@@ -509,39 +513,90 @@ footer {
             }
         }
 
-        .btn-social{
+        .btn-social {
             text-align: center;
         }
 
-        .img-sobre{
-            img{
+        .img-sobre {
+            img {
                 width: 100%;
             }
         }
 
     }
 
-    .portifolio{
+    .portifolio {
         padding: 80px 8%;
 
-        .flex{
-            gap:50px;
+        .flex {
+            gap: 50px;
         }
 
-        .img-port{
+        .img-port {
             width: 100%;
             max-width: 360px;
             margin: 0 auto;
         }
     }
 
+    // Formulario
+    .formulario {
+        padding: 80px 4%;
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 40px;
+
+            input,
+            textarea {
+                width: 100%;
+                background-color: #2a2a2a;
+                border: 0;
+                border-radius: 15px;
+                outline: 0;
+                padding: 20px 15px;
+                color: $branco;
+                font-size: 18px;
+            }
+
+            textarea {
+                resize: none;
+                max-height: 200px;
+            }
+
+            .btn-enviar {
+                margin-top: 20px;
+                text-align: center;
+
+                input {
+                    width: 120px;
+                    background-color: $verde;
+                    color: $branco;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: .2s;
+                }
+
+                input:hover {
+                    @include btn-hover()
+                }
+            }
+
+        }
+    }
+
     // Rodape
-    footer{
-        .flex{
+    footer {
+        .flex {
             flex-direction: column;
         }
 
-        .line-footer{
+        .line-footer {
             text-align: center;
         }
     }
