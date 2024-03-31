@@ -121,6 +121,9 @@ header .btn-contato button {
   display: block;
 }
 
+.btn-abrir-menu {
+  display: none;
+}
 .btn-abrir-menu i {
   color: #179EE2;
   font-size: 40px;
@@ -357,6 +360,9 @@ footer .line-footer p a {
   }
   .menu-desktop, .btn-contato {
     display: none;
+  }
+  .btn-abrir-menu {
+    display: inline;
   }
   .topo-site {
     padding: 20px 8%;

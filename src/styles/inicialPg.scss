@@ -172,6 +172,7 @@ header {
 }
 
 .btn-abrir-menu{
+    display: none;
     i{
         color: $azul;
         font-size: 40px;
@@ -463,6 +464,10 @@ footer {
     // Cabeçalho
     .menu-desktop,.btn-contato {
         display: none;
+    }
+
+    .btn-abrir-menu{
+        display: inline;
     }
 
     // Top do Site
