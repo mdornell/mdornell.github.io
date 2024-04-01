@@ -11,21 +11,22 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- Google fonts -->
 
     <!-- Bootstrab icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Bootstrab icons -->
 
-    <script src="src/scripts/menu.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="interface">
             <div class="Logo">
-                <a href=""><img src="../imgs/logo.png" alt="LOGO"></a>
+                <a href="../../index.html"><img src="../imgs/logo.png" alt="LOGO"></a>
             </div>
             <nav class="menu-desktop">
                 <ul>
@@ -33,71 +34,62 @@
                 </ul>
             </nav>
 
-            <div class="btn-abrir-menu" id="btn-menu">
-                <i class="bi bi-list"></i>
-            </div>
-
-            <div class="menu-mobile" id="menu-mobile">
-                <div class="btn-fechar">
-                    <i class="bi bi-x-lg"></i>
-                </div>
-
-                <nav>
-                    <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#especialidades">Especialidades</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#portifolio">Projetos</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                </nav>
-
-            </div>
-
-            <div class="overlay-menu" id="overlay-menu">
-
-            </div>
-
         </div>
     </header>
 
     <main>
         <div class="container-grid">
-            <div class="unidades">
-
+            <div class="conteundo-box unidades">
+                <h1>Unidades</h1>
+                <p>As unidades foram utilizadas em toda a página devido à sua utilização para dimensionar os itens da tela, sendo unidades absolutas ou relativas.</p>
+                <p>Unidades absolutas: foi utilizado o Pixel (px). Já as relativas foram utilizados dois tipos: Porcentagem (%) e Viewport Width e Viewport Height (vw e vh).</p>
             </div>
-            <div class="media-query">
-
+            <div class="conteundo-box media-query">
+                <h1>Mídia Query</h1>
+                <p>A mídia query foi utilizada para criar a responsividade da página, permitindo que ela seja utilizada em diversos aparelhos.</p>
+                <p>O limite de largura que foi utilizado para determinar o ponto de quebra foi de 1000px e pode ser encontrado no arquivo <q><a href="../styles/pagePricipal/SASS/_responsividade.scss">_responsividade.scss</a></q>.</p>
             </div>
-            <div class="animacao">
-
+            <div class="conteundo-box animacao">
+                <h1>Animiações</h1>
+                <p>A utilização de animação foi feita para a imagem que está no primeiro conteúdo da página, aplicando um movimento vertical que oscila de cima para baixo e vice-versa.</p>
+                <p>Sendo encontrado no arquivo <q><a href="../styles/pagePricipal/SASS/_topoSite.scss">_topoSite.scss</a></q>.</p>
             </div>
-            <div class="transformacao">
-
+            <div class="conteundo-box transformacao">
+                <h1>Tranformação</h1>
+                <p>As transformações foram utilizadas em sua maioria para o crescimento do item ao passar do mouse utilizando a função <q>scale</q>. Sendo encontradas em diversas partes da página.</p>
+                <p>Podem ser encontradas no arquivo <q><a href="../styles/pagePricipal/SASS/_especialidades.scss">_especialidades.scss</a></q>.</p>
             </div>
-            <div class="sass">
-
+            <div class="conteundo-box sass">
+                <h1>SASS</h1>
+                <p>Toda a estilização da página foi feita com arquivos SASS, facilitando assim o desenvolvimento. Foram utilizadas variáveis, mixins e o encapsulamento de blocos, facilitando a organização do código.</p>
+                <p>Os arquivos estão na pasta <q><a href="../styles">styles</a></q>, a qual está dividida entre a página principal e a página "sobre" (esta página).</p>
             </div>
-            <div class="flex-box">
-
+            <div class="conteundo-box flex-box">
+                <h1>Flex Box</h1>
+                <p>Os parâmetros que envolvem flexbox foram utilizados em diversas partes, como justify-content, display flex e outros.</p>
+                <p>Pode ser visto no arquivo <q><a href="../styles/pagePricipal/SASS/_cabecalho.scss">_cabecalho.scss</a></q> logo no início do código.</p>
             </div>
-            <div class="grid">
-
+            <div class="conteundo-box grid">
+                <h1>Grid Layout</h1>
+                <p>O Grid Layout foi utilizado na seção que descreve minhas curiosidades, trazendo um grid vertical.</p>
+                <p>Descrito no arquivo <q><a href="../styles/pagePricipal/SASS/_curiosidades.scss">_curiosidades.scss</a></q>.</p>
             </div>
         </div>
     </main>
 
     <footer>
-        <div class="interface">
+        <div class="conteundo-box interface">
             <div class="line-footer borda">
                 <div class="flex">
                     <div class="logo-footer">
                         <img src="src/imgs/logo.png" alt="">
                     </div>
                     <div class="btn-social">
-                        <a href="https://www.instagram.com/mr.dornell?igsh=MTFlazBpbDMzYjA3OQ=="><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.instagram.com/mr.dornell?igsh=MTFlazBpbDMzYjA3OQ=="><button><i
+                                    class="bi bi-instagram"></i></button></a>
                         <a href="https://github.com/mdornell"><button><i class="bi bi-github"></i></button></a>
-                        <a href="https://www.linkedin.com/in/mdornell/"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://www.linkedin.com/in/mdornell/"><button><i
+                                    class="bi bi-linkedin"></i></button></a>
                     </div>
                 </div>
             </div>

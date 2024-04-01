@@ -1,15 +1,10 @@
 .container-grid {
-  background-color: #131313;
+  padding: 0 16% 80px;
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
-  grid-auto-columns: 600px;
-  gap: 0px 0px;
+  grid-template-columns: 60%;
+  gap: 0;
   grid-auto-flow: row;
   grid-template-areas: "unidades unidades" "media-query media-query" "animacao animacao" "transformacao transformacao" "sass sass" "flex-box flex-box" "grid grid";
-}
-.container-grid .unidades ~ div {
-  box-shadow: 0 0 40px 10px rgba(205, 205, 205, 0.4549019608);
 }
 .container-grid .unidades {
   grid-area: unidades;
@@ -31,4 +26,28 @@
 }
 .container-grid .grid {
   grid-area: grid;
+}
+
+.container-grid .conteundo-box {
+  padding: 30px 8%;
+  color: #ffffff;
+  margin-top: 45px;
+  border-radius: 20px;
+  transition: 0.2s;
+  text-align: justify;
+}
+.container-grid .conteundo-box h1 {
+  font-size: 30px;
+}
+.container-grid .conteundo-box p {
+  font-size: 16px;
+  line-height: 28px;
+}
+.container-grid .conteundo-box p a {
+  color: #179EE2;
+  text-decoration: none;
+}
+.container-grid .conteundo-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4745098039);
 }/*# sourceMappingURL=pageSobre.css.map */
